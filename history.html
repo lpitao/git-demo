@@ -11,6 +11,9 @@
         <div id="app"></div>
     </body>
     <script>
+        // 提交git
+        console.log('git提交')
+
         console.log(window.history)
         //修改history记录及页面内容
         function go(pathname){
@@ -19,6 +22,8 @@
             // window.history.pushState(null,'',pathname)
             app.innerHTML = pathname
         }
+        
+        
         //监听浏览器的前进后退并修改页面内容
         window.addEventListener('popstate', () => {
             app.innerHTML = location.pathname
