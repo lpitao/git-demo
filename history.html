@@ -23,9 +23,11 @@
             app.innerHTML = pathname
         }
 
+
+        
         
         //监听浏览器的前进后退并修改页面内容
-        
+
         window.addEventListener('popstate', () => {
             app.innerHTML = location.pathname
         })
